@@ -57,7 +57,6 @@ public class CalculatorController implements Initializable {
 
             @Override
             protected String computeValue() {
-
                 switch (((RadioButton) toggleGroup.getSelectedToggle()).getText()) {
                     case "+":
                         return "" + (int) slider.getValue() + ((RadioButton) toggleGroup.getSelectedToggle()).getText() + choiceBox.getValue()

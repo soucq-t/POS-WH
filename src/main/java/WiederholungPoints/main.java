@@ -11,10 +11,7 @@ public class main {
 
 
         Optional<Map<Integer, List<Point>>> optional=   allPoints("src/main/resources/WiederholungPoints/newPunkte.dat");
-        if(!optional.isPresent()){
-           throw new IllegalArgumentException();
-        }
-        Map<Integer, List<Point>> points=optional.get();
+        Map<Integer, List<Point>> points=optional.orElseThrow();
         points.forEach((integer, point) -> {
             System.out.println("Quadrant: "+integer);
             point.forEach(point1 -> System.out.println( point1));

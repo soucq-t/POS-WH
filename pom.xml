@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javaVersion>12</javaVersion>
+        <javaVersion>16</javaVersion>
         <javaFxVersion>13.0.2</javaFxVersion>
     </properties>
 
